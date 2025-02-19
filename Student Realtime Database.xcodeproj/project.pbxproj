@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E7A9A3252D4BBEA000D69AE9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E7A9A3242D4BBEA000D69AE9 /* FirebaseAuth */; };
+		E7A9A3272D4BBEA000D69AE9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E7A9A3262D4BBEA000D69AE9 /* FirebaseDatabase */; };
+		E7A9A3292D4BBEA000D69AE9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E7A9A3282D4BBEA000D69AE9 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E7A9A3042D4BB83200D69AE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A9A3272D4BBEA000D69AE9 /* FirebaseDatabase in Frameworks */,
+				E7A9A3252D4BBEA000D69AE9 /* FirebaseAuth in Frameworks */,
+				E7A9A3292D4BBEA000D69AE9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,9 @@
 			);
 			name = "Student Realtime Database";
 			packageProductDependencies = (
+				E7A9A3242D4BBEA000D69AE9 /* FirebaseAuth */,
+				E7A9A3262D4BBEA000D69AE9 /* FirebaseDatabase */,
+				E7A9A3282D4BBEA000D69AE9 /* FirebaseFirestore */,
 			);
 			productName = "Student Realtime Database";
 			productReference = E7A9A2EA2D4BB83000D69AE9 /* Student Realtime Database.app */;
@@ -208,6 +220,9 @@
 			);
 			mainGroup = E7A9A2E12D4BB83000D69AE9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E7A9A3232D4BBEA000D69AE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E7A9A2EB2D4BB83000D69AE9 /* Products */;
 			projectDirPath = "";
@@ -287,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2U9LG3V72B;
@@ -297,13 +313,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "clc.Student-Realtime-Database";
+				PRODUCT_BUNDLE_IDENTIFIER = "clc.Student-Realtime-Database-McCain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2U9LG3V72B;
@@ -325,13 +344,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "clc.Student-Realtime-Database";
+				PRODUCT_BUNDLE_IDENTIFIER = "clc.Student-Realtime-Database-McCain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,6 +590,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7A9A3232D4BBEA000D69AE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7A9A3242D4BBEA000D69AE9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A9A3232D4BBEA000D69AE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E7A9A3262D4BBEA000D69AE9 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A9A3232D4BBEA000D69AE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E7A9A3282D4BBEA000D69AE9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7A9A3232D4BBEA000D69AE9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7A9A2E22D4BB83000D69AE9 /* Project object */;
 }
